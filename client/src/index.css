@@ -1,0 +1,488 @@
+/* Gmarket */
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+/* 땅스부대지개 */
+@font-face {
+  font-family: 'TTTtangsbudaejjigaeB';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/TTTtangsbudaejjigaeB.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body {
+  margin: 0;
+  background-image: url(/public/icons/backgroundBorder.png), url(/public/icons/backgroundImg.png) ;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, 2000px 100%;
+  background-attachment: fixed, scroll;
+}
+
+/* code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+/* ===============이미지 세팅=============== */
+
+/* img {
+  width: 310px;
+  height: 330px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+} */
+
+/* =============이미지 사이즈 조절================= */
+.img1 {
+  width: 320px;
+  height: 340px;
+  margin: 10px;
+}
+
+.img2 {
+  width: 250px;
+  height: 250px;
+  margin: 10px;
+}
+
+.img3 {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+}
+.img4 {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+
+/* 텍스트 입력 디자인 */
+input {
+  background-color: none;
+  height: 30px;
+  width: 280px;
+  border: 2px solid #3688FF;
+  border-radius: 50px;
+  /* margin: 20px 10px 20px 15px; */
+  color: black;
+  padding: 20px 28px 20px 28px;
+}
+
+.login {
+  font-size: 16px;
+}
+
+
+
+/* ===============전체 화면 세팅=============== */
+.mainview {
+  min-height: 844px;
+  /* max-width: 390px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: GmarketSansMedium;
+}
+
+/* =================텍스트 디자인 모음============== */
+/* 회색 글씨 들어가는 부분 디자인 */
+.greyFont {
+  font-size: 16px;
+  color: #7D7D7D;
+  font-weight: 200;
+  align-items: center;
+  font-family: GmarketSansMedium;
+}
+
+/* ==================두 줄 텍스트 정렬 디자인=================== */
+
+.fontStyle {
+  padding: 20px 30px;
+  font-size: 20px;
+  font-family: GmarketSansMedium;
+  font-weight: 500;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+
+.textBox {
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+} 
+
+.linebox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  height: 100px;
+  width: 300px;
+  font-size: 20px;
+}
+
+
+
+/* ================제목+부제목+이미지 정렬 박스============ */
+.titleAlign {
+  width: 306px;
+  height: 100px;
+  font-family: TTTtangsbudaejjigaeB;
+  font-weight: 100;
+  justify-content: center;
+  /* align-items: center; */
+  margin-right: 30px;
+}
+
+/* ====로그인화면======= */
+
+.signBox {
+  width: 292px;
+  height: 60px;
+  margin: 0 49px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* margin: 0 auto; */
+  text-decoration: none;
+  line-height: 40px;
+  
+}
+.signBtn {
+  height: 3px;
+  text-align: center;
+  color: white;
+}
+
+
+/* ===================피이지 이동할 때 누르는 모든 버튼 디자인====================== */
+.moveButton {
+  width: 300px;
+  height: 60px;
+  margin: 20px 0;
+  color: white;
+  background: #FF6CD9;
+  border-radius: 50px; 
+  border: none;
+  text-align: center;
+  font-family: GmarketSansMedium;
+  /* line-height: auto; */
+}
+
+/* ========================밸런스 게임 선택지 버튼 디자인========================== */
+/* .balanceButton {
+  border-radius: 30px;
+  margin: 50px 50px;
+  padding: 50px;
+} */
+
+/* ===============SelectButton.js================= */
+
+/* ========================밸런스 게임 선택지 버튼 스타일======================= */
+.selectButton {
+  width: 175px;
+  height: 100px;
+
+  display: flex;
+  padding: 15px 30px 15px 30px;
+  background: rgba(255, 108, 217, 1);
+  color: #FFFFFF;
+  margin: 10px;
+  font-size: 32px;
+  border-radius: 50px;
+  text-decoration: none;
+  
+
+  justify-content: center;
+  align-items: center;
+  font-family: GmarketSansMedium;
+}
+
+
+/* ===============Balance_page.js=============== */
+.balancePage {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+/* =================선택지 버튼 두개 보여주는 박스================ */
+.buttonBox {
+  display: flex;
+  flex-direction: row;
+  width: 350px;
+  margin: 200px -20px;
+  justify-content: center;
+}
+
+
+
+
+/* ==============가치관 선택지 버튼 디자인================== */
+.valueBtn {
+  width: 100px;
+  height: 60px;
+  color: white;
+  font-size: 20px;
+  border-radius: 50px;
+  margin: 5px;
+  text-align: center;
+  line-height: 60px;
+  border: none;
+}
+/* ===============성격 선택지 버튼 디자인================= */
+.personBtn {
+  width: 160px;
+  height: 60px;
+}
+
+/* =============가치관 & 성격 선택지 2개 or 3개로 담는 div 디자인============== */
+.showBtn {
+  display: flex;
+  flex-direction: row;
+  /* margin-top: 250px; */
+}
+
+
+/* ================화살표 디자인=============== */
+.arrow {
+  width: 100px;
+  height: 70px;
+  margin: 20px;
+}
+
+/* Home_page.js */
+.homeBtn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  /* margin-top: -10px; */
+}
+
+
+/* Start_page.js */
+/* .startText {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 20px;
+} */
+
+/* 
+.startPage {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* MentToPage.js */
+/* .mentToPage {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* =============제목 text style - 가자 큰 클씨 스타일================= */
+.title {
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 0.40);
+  
+  width: 261px;
+  height: 40px;
+  font-size: 36px;
+  padding: 30px 30px;
+  font-weight: 400;
+
+  color: #000;
+  text-align: center;
+  font-family: Ttangsbudaejjigae OTF;
+
+  font-style: normal;
+  line-height: 50px;
+}
+
+.subtitle {
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.40);
+  width: 250px;
+  height: 20px;
+  font-size: 16px;
+  padding: 16px 35px;
+
+  color: #7D7D7D;
+  text-align: center;
+  font-family: GmarketSansMedium;
+  font-weight: 400;
+  line-height: 20px; 
+  margin: 10px;
+
+}
+
+.midtitle {
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.40);
+  width: 250px;
+  height: 20px;
+  font-size: 24px;
+  padding: 26px 30px;
+
+  color: black;
+  text-align: center;
+  font-family: GmarketSansMedium;
+  font-weight: 400;
+  line-height: 20px; 
+  margin: 0;
+
+  
+}
+
+
+
+/* ===========밸런스페이지 이미지+제목============ */
+
+/* 화면 텍스트 블러 배경 디자인 */
+.textBack {
+  background-color:rgba(255, 255, 255, 0.40);
+  border-radius: 50px;
+  width: 261px;
+  height: 84px;
+  padding: 30px;
+  text-align: center;
+
+  color: #000;
+  text-align: center;
+
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 20px;
+  font-family: GmarketSansMedium ;
+}
+
+.smallTextBack {
+  width: 300px;
+  height: 50px;
+  font-size: 16px;
+  color: #7D7D7D;
+}
+
+/* 선택한 항목 체크하는 textbox */
+.cntText {
+  height: 40px;
+  width: 60px;
+  font-size: 14px;
+  position: fixed;
+  top: 0;
+  padding: 2px 3px;
+  text-align: center;
+  line-height: 40px;
+  margin-top: 15px;
+}
+
+.blueArrow {
+  margin: 3px;
+  width: auto;
+  height: auto;
+}
+
+/* 
+ .circle {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-left: -5px;
+  text-align: center;
+  line-height: 14px;
+  filter: blur(5px); 
+  -webkit-filter: blur(5px); 
+} */
+
+
+/* ==============말풍선 디자인============== */
+.pull {
+  position:relative;
+  margin: 1px; 
+  padding:2px; 
+  width: 250px; 
+  height: 60px; 
+  color: #FFF; 
+  border-radius: 30px; 
+  background-color: #3688FF;
+  text-align: center;
+  line-height: 50px;
+}
+.pull:after {
+  content:""; 
+  position: absolute; 
+  top: 0.5px; 
+  right: 180px; 
+  border-right: 100px solid #3688FF;
+  border-left: 50px solid transparent; 
+  border-top: 10px solid transparent; 
+  border-bottom: 10px solid transparent;
+}
+
+/* 
+.circleBox {
+  display: flex;
+  flex-direction: row;
+  color: #FFFFFF;
+  width: 300px;
+  height: 300px;
+  margin-bottom: 10px;
+} */
+
+.keyword {
+ 
+  display: flex;
+  flex-direction: column; 
+  margin: 0 auto;
+  font-size: '40px';
+}
+.showpersontext {
+  font-size: 19px;
+  font-weight: bolder;
+}
+
+.friendsay {
+  display: flex;
+  flex-direction: row;
+ 
+
+}
+
+.friendment {
+  text-align: center;
+
+  /* background-color: ; */
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50px;
+  /* height: 10px; */
+}
+
+.texts {
+  margin: 4px;
+}
+
+.wrap{
+  position: relative;
+}
