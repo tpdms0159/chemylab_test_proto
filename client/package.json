@@ -17,7 +17,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy": "http://tpdms0159.github.io/chemylab_test_proto/",
+    "deploy": "http://tpdms0159.github.io/chemylab_test_proto/client/",
     "predeply": "npm run build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
